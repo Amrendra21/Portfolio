@@ -70,7 +70,7 @@ const Contact = () => {
     {
       icon: <Instagram size={24} />,
       name: "Instagram",
-      url: "https://instagram.com/_amrendra21",
+      url: "https://instagram.com/amrendra21.exe",
       color: "hover:text-pink-600",
     },
   ];

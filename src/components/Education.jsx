@@ -22,7 +22,7 @@ const Education = () => {
       degree: "Higher Secondary Education",
       field: "Science (PCM)",
       institution: "Mount Litera Zee School",
-      location: "Unna",
+      location: "Unnao",
       duration: "2022 - 2024",
       grade: "92%",
       description:
@@ -37,7 +37,7 @@ const Education = () => {
       degree: "Secondary Education",
       field: "All Subjects",
       institution: "Mount Litera Zee School",
-      location: "Unna",
+      location: "Unnao",
       duration: "2020 - 2022",
       grade: "95%",
       description:

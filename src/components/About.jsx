@@ -74,7 +74,7 @@ const About = () => {
                     </span>
                   </div>
                   <p className="text-gray-600 text-sm">
-                    Mount Litera Zee School, Unna
+                    Mount Litera Zee School, Unnao
                   </p>
                 </div>
 
@@ -88,7 +88,7 @@ const About = () => {
                     </span>
                   </div>
                   <p className="text-gray-600 text-sm">
-                    Mount Litera Zee School, Unna
+                    Mount Litera Zee School, Unnao
                   </p>
                 </div>
 

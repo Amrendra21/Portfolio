@@ -39,12 +39,12 @@ export const ACADEMICS = [
   },
   {
     degree: 'Class 12 (PCM)',
-    institution: 'Vidya Niketan Inter College',
+    institution: 'Mount Litera Zee School, Unnao',
     score: '92%',
   },
   {
     degree: 'Class 10',
-    institution: 'Vidya Niketan Inter College',
+    institution: 'Mount Litera Zee School, Unnao',
     score: '95%',
   },
 ];

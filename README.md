@@ -93,58 +93,21 @@ npx eslint .
 
 ## Project Structure
 
-```bash
+```text
 Portfolio/
-├── public/                         # Static assets served directly
-│   ├── avatar.png                  # Profile photograph
-│   ├── aws-cloud-practitioner.jpg  # AWS certification credential asset
-│   ├── aws-data-engineer.jpg       # AWS certification credential asset
-│   ├── banner-dark.jpg             # Header banner for dark mode
-│   ├── banner-light.jpg            # Header banner for light mode
-│   ├── favicon.png                 # Browser tab favicon
-│   └── research-publication.png    # Conference publication proof
+├── public/                  # Static assets, certificates & images
 ├── src/
-│   ├── components/                 # Reusable UI elements
-│   │   ├── DottedLine.jsx          # Blueprint dotted lines and node markers
-│   │   ├── GithubGraph.jsx         # Live GitHub contribution calendar
-│   │   ├── IndexSidebar.jsx        # Right-docked section navigation
-│   │   ├── Lightbox.jsx            # Modal viewer for certificates and proofs
-│   │   ├── ProgressBar.jsx         # Top scroll progress indicator
-│   │   ├── SectionWrapper.jsx      # Section container with blueprint borders
-│   │   └── ThemeToggle.jsx         # Dark/light theme toggle button
-│   ├── context/
-│   │   └── ThemeContext.jsx        # Theme state provider and persistence
-│   ├── data/
-│   │   ├── github-contributions.json # Cached GitHub activity dataset
-│   │   └── portfolio.js            # Structured data for projects, skills, education
-│   ├── sections/                   # Main page layout sections
-│   │   ├── CertificationsSection.jsx
-│   │   ├── ContactSection.jsx
-│   │   ├── EducationSection.jsx
-│   │   ├── ProjectsSection.jsx
-│   │   ├── ResearchSection.jsx
-│   │   └── SkillsSection.jsx
-│   ├── App.jsx                     # Root application layout and composition
-│   ├── index.css                   # Global styles and Tailwind v4 configuration
-│   └── main.jsx                    # Application entry point
-├── .gitignore                      # Git ignored files and directories
-├── index.html                      # HTML document template
-├── package.json                    # Project metadata and dependencies
-└── vite.config.js                  # Vite configuration and plugins
+│   ├── components/          # Reusable UI components
+│   ├── context/             # Theme context and state management
+│   ├── data/                # Portfolio content & GitHub contribution data
+│   ├── sections/            # Main portfolio sections
+│   ├── App.jsx              # Root application component
+│   ├── index.css            # Global styles
+│   └── main.jsx             # Application entry point
+├── index.html               # HTML template
+├── package.json             # Dependencies and scripts
+└── vite.config.js           # Vite configuration
 ```
-
----
-
-## Deployment
-
-The portfolio is deployed on [Vercel](https://vercel.com/) with automatic continuous deployment on push to the `main` branch.
-
-To deploy your own fork:
-
-1. Import the repository into your [Vercel Dashboard](https://vercel.com/new).
-2. Set the framework preset to **Vite**.
-3. Keep the default build command (`npm run build`) and output directory (`dist`).
-4. Click **Deploy**.
 
 ---
 

@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Light mode defaults */
+  body {
+    background-color: #ffffff;
+    color: #18181b;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    font-size: 15px;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Dark mode */
+  html.dark body {
+    background-color: #000000;
+    color: #ededed;
+  }
+
+  ::-webkit-scrollbar { width: 3px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 2px; }
+  html.dark ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); }
+
+  ::selection { background: rgba(0,0,0,0.12); }
+  html.dark ::selection { background: rgba(255,255,255,0.15); }
+
+  a { color: inherit; text-decoration: none; }
+}
+
+/* View Transition for theme toggle */
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+::view-transition-old(root) {
+  animation: 180ms ease fade-out;
+}
+::view-transition-new(root) {
+  animation: 200ms ease fade-in;
+}
